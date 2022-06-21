@@ -1,0 +1,36 @@
+@use "../custom" as *; //para usar directamente las variables y mixins de Bootstrap sin el epsoacio de nombres
+
+.carta {
+  background-image: linear-gradient(to top, transparent 50%, $white 0%),
+    url(../../img/carta.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: center;
+  background-size: contain, cover;
+
+  @include media-breakpoint-up(lg) {
+    background-image: linear-gradient(to right, transparent 60%, $white 0%),
+      url(../../img/carta.jpg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 60rem);
+    @include media-breakpoint-up(md) {
+      grid-template-rows: repeat(2, 30rem);
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-rows: repeat(1, 25rem);
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+  &__contenido {
+    grid-column: 2/3;
+  }
+  &__precio {
+    color: $primary;
+  }
+}

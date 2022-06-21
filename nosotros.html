@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante japonés: Miss Sushi</title>
+    <meta name="description" content="Meeti y aprendiendo bootsrap 5 y SASS." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="build/css/style.css" />
+    <!-- <link rel="stylesheet" href="build/css/japo.css"> -->
+  </head>
+  <body class="bg-dark">
+    <header>
+      <div class="nav_container bg-dark w-100">
+        <!-- redes -->
+        <nav
+          class="redes position-relative d-flex justify-content-between pt-2"
+        >
+          <p class="text-white">Contáctanos: &nbsp &nbsp +34 654 458 441</p>
+          <ul class="d-flex list-unstyled">
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navbar -->
+        <nav
+          class="up text-uppercase navbar navbar-expand-lg navbar-dark position-relative"
+        >
+          <div class="navbar-brand">
+            <img
+              class="logo img-fluid"
+              src="img/logo.png"
+              alt="logo del restaurante"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="carta.html">Carta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">Reservas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contactanos">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- nosotros -->
+    <section class="nosotros" id="nosotros">
+      <div class="nosotros__grid">
+        <div
+          class="nosotros__heading d-flex align-items-center justify-content-center"
+        >
+          <h2 class="text-center text-uppercase text-white">Sobre Nosotros</h2>
+        </div>
+        <div class="nosotros__contenido d-flex flex-column flex-lg-row container">
+          <div class="textos">
+            <div class="cocina p-4">
+              <h5>Nuestra cocina</h5>
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                sint architecto amet vel laudantium natus eum illum nulla
+                suscipit porro quos sequi veritatis numquam, consequatur
+                voluptatum asperiores molestiae illo quidem.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit rerum consequuntur asperiores. Voluptate esse optio cumque qui placeat, ipsa dolore rerum deleniti animi tenetur itaque consequatur atque ipsum nam error
+              </p>
+            </div>
+            <div class="restaurante p-4">
+              <h5>Nuestro restaurante</h5>
+              <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                sint architecto amet vel laudantium natus eum illum nulla
+                suscipit porro quos sequi veritatis numquam, consequatur
+                voluptatum asperiores molestiae illo quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cum praesentium qui perferendis delectus illum dolore laborum? Ullam assumenda dolor quasi, tenetur excepturi corporis a nihil libero obcaecati cupiditate necessitatibus?
+              </p>
+            </div>
+          </div>
+          <img
+            class="img-fluid w-25 p-2"
+            src="img/restaurante.jpg"
+            alt="restaurante"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+        </section>
+
+        <div class="ubicacion">
+          <h5 class="text-uppercase">Ubicación</h5>
+          <p>Nos encontramos en Calle Betis nº 32, Sevilla, España</p>
+        </div>
+
+        <section class="">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nosotros</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Horarios</h5>
+              <ul class="list-unstyled mb-0">
+                <li>Lunes: Cerrado.</li>
+                <li>Martes-Viernes: 10AM-23h.</li>
+                <li>Sábado: 10AM-00h.</li>
+                <li>Domingo: 10AM-23h.</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Galería</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Carta</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Reservas</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Horarios</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row justify-content-between m-0">
+        <p class="col-sm text-md-start"> &#169 Todos los derechos reservados.</p>
+        <div class="col-sm text-md-end ">
+          <a href="">Política de privacidad legal</a>
+          <a href="">Cookies</a>
+          <a href="">Condiciones de Reserva/Política de cancelación</a>
+        </div> 
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

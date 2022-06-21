@@ -1,12 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante japonés: Miss Sushi</title>
+    <meta name="description" content="Meeti y aprendiendo bootsrap 5 y SASS." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-</body>
+    <!-- <link rel="stylesheet" href="build/css/style.css" /> -->
+    <link rel="stylesheet" href="build/css/japo.css">
+  </head>
+  <body class="bg-dark">
+
+    <header>
+      <div class="nav_container position-fixed z-index w-100">
+        <!-- redes -->
+        <nav
+          class="redes position-relative d-flex justify-content-between pt-2"
+        >
+          <p class="text-white">Contáctanos: &nbsp &nbsp +34 654 458 441</p>
+          <ul class="d-flex list-unstyled">
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a class="text-white m-2" href="#!" role="button"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navbar -->
+        <nav
+          class="up text-uppercase navbar navbar-expand-lg navbar-dark position-relative"
+        >
+          <div class="navbar-brand">
+            <img
+              class="logo img-fluid"
+              src="img/logo.png"
+              alt="logo del restaurante"
+            />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#galeria">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="carta.html">Carta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="">Reservas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="">Horarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contactanos">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <video class="w-100" autoplay muted loop id="myVideo">
+        <source src="img/hero-video.mp4" type="video/mp4" />
+      </video>
+    </header>
+
+    <!-- especialidades -->
+    <section
+      id="especialidades"
+      class="especialidades text-white text-uppercase container py-5"
+    >
+      <h2 class="text-center pb-4">Especialidades</h2>
+      <div class="especialidades row justify-content-around gap-3 p-4">
+        <div class="especialidad col-md position-relative p-0">
+          <img
+            class="especialidad__cover img-fluid rounded"
+            src="img/especial-1.png"
+            alt="solomillo"
+          />
+          <div
+            class="especialidad__difuminado position-absolute d-flex justify-content-center align-items-center rounded fw-bold"
+          >
+            Solomillo
+          </div>
+        </div>
+        <div class="especialidad col-md position-relative p-0">
+          <img
+            class="especialidad__cover img-fluid rounded"
+            src="img/especial-2.jpg"
+            alt="Sushi"
+          />
+          <div
+            class="especialidad__difuminado position-absolute d-flex justify-content-center align-items-center rounded fw-bold"
+          >
+            Sushi
+          </div>
+        </div>
+        <div class="especialidad col-md position-relative p-0">
+          <img
+            class="especialidad__cover img-fluid rounded"
+            src="img/especial-3.jpg"
+            alt="Pan bao"
+          />
+          <div
+            class="especialidad__difuminado position-absolute d-flex justify-content-center align-items-center rounded fw-bold"
+          >
+            Pan bao
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- galeria -->
+    <main id="galeria" class="container py-5">
+      <div class="galeria__grid">
+        <div class="galeria__texto text-white">
+          <h6 class="text-uppercase text-primary">Galeria</h6>
+          <h5 class="text-uppercase">Una experiencia única</h5>
+          <p class=" ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            magnam eveniet beatae, enim nulla repellat ullam explicabo quas odit
+            facilis quidem laborum dolore a officiis fuga esse amet! Nemo,
+            ullam.
+          </p>
+          <a class="" href=""><h6>Ver más</h6></a>
+        </div>
+
+        <a
+          class="galeria__enlace galeria__enlace--1"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          href="#enlace1"
+          ><img
+            class="galeria__imagen--1 img-fluid"
+            src="img/galeria-1.jpg"
+            alt=""
+        /></a>
+
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Galería</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/galeria-1.jpg" alt="" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="galeria__enlace galeria__enlace--2"
+          data-bs-toggle="modal"
+          data-bs-target="#imagen2"
+          href="#enlace2"
+          ><img
+            class="galeria__imagen--2 img-fluid"
+            src="img/galeria-2.jpg"
+            alt=""
+        /></a>
+
+        <div
+          class="modal fade"
+          id="imagen2"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Galería</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/galeria-2.jpg" alt="" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="galeria__enlace galeria__enlace--3"
+          data-bs-toggle="modal"
+          data-bs-target="#imagen3"
+          href="#enlace3"
+          ><img
+            class="galeria__imagen--3 img-fluid"
+            src="img/galeria-3.jpg"
+            alt=""
+        /></a>
+
+        <div
+          class="modal fade"
+          id="imagen3"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Galería</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/galeria-3.jpg" alt="" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="galeria__enlace galeria__enlace--4"
+          data-bs-toggle="modal"
+          data-bs-target="#imagen4"
+          href="#enlace4"
+          ><img
+            class="galeria__imagen--4 img-fluid"
+            src="img/galeria-4.jpg"
+            alt=""
+        /></a>
+
+        <div
+          class="modal fade"
+          id="imagen4"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Galería</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/galeria-4.jpg" alt="" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="galeria__enlace galeria__enlace--5"
+          data-bs-toggle="modal"
+          data-bs-target="#imagen5"
+          href="#enlace5"
+          ><img
+            class="galeria__imagen--5 img-fluid"
+            src="img/galeria-22.jpg"
+            alt=""
+        /></a>
+
+        <div
+          class="modal fade"
+          id="imagen5"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Galería</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/galeria-22.jpg" alt="" />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- carusel reviews -->
+    <section class="container pb-5">
+      <div class="pb-4">
+        <h6 class="text-uppercase text-primary">Reviews</h6>
+        <h5 class="text-uppercase text-white">
+          Lo que dicen sobre Miss Kasumi
+        </h5>
+      </div>
+      <div class="carusel__reviews">
+        <div class="cuadrado1"></div>
+        <div class="wrapper">
+          <div class="outer">
+            <div class="card" style="--delay: -1">
+              <div class="content">
+                <div class="img">
+                  <img src="img/trip-advisor-logo.png" alt="" />
+                </div>
+                <div class="details">
+                  <span class="name">Sumit Kapoor</span>
+                  <p>"Excelente comida y atención"</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="--delay: 0">
+              <div class="content">
+                <div class="img">
+                  <img src="img/trip-advisor-logo.png" alt="" />
+                </div>
+                <div class="details">
+                  <span class="name">Andrew Neil</span>
+                  <p>"Platos excepcionales y deliciosos."</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="--delay: 1">
+              <div class="content">
+                <div class="img">
+                  <img src="img/trip-advisor-logo.png" alt="" />
+                </div>
+                <div class="details">
+                  <span class="name">Jasmine Carter</span>
+                  <p>"Excelente en todos los sentidos."</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="--delay: 2">
+              <div class="content">
+                <div class="img">
+                  <img src="img/trip-advisor-logo.png" alt="" />
+                </div>
+                <div class="details">
+                  <span class="name">Justin Chung</span>
+                  <p>"Una experiencia increíble."</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="--delay: 2">
+              <div class="content">
+                <div class="img">
+                  <img src="img/trip-advisor-logo.png" alt="" />
+                </div>
+                <div class="details">
+                  <span class="name">Adrina Calvo</span>
+                  <p>"El mejor sushi que he probado nunca."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cuadrado2"></div>
+      </div>
+    </section>
+
+    <!-- CONTACTANOS -->
+    <section id="contactanos" class="contacta text-white py-5 mt-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-4">
+          <h2 class="position-relative text-uppercase">Contáctanos</h2>
+          <form
+            action="#"
+            method="post"
+            class="needs-validation position-relative"
+            novalidate
+          >
+            <div class="m-3">
+              <label class="mb-3" for="nombre">Nombre y apellidos</label>
+              <input
+                type="text"
+                class="form-control bg-hover opacity-50"
+                name="nombre"
+                id="nombre"
+              />
+            </div>
+            <!-- mail -->
+            <div class="m-3">
+              <label for="input-email"
+                ><i class="bi bi-envelope-fill"></i> Correo Electronico</label
+              >
+              <input
+                type="email"
+                class="form-control bg-hover opacity-50"
+                name="email"
+                placeholder="name@example.com"
+                id="input-email"
+                aria-describedby="email-help"
+                required
+              />
+
+              <div id="email-help" class="form-text">
+                No compartiremos tu direccion de email con terceros...
+              </div>
+            </div>
+            <!-- mensaje -->
+            <div class="m-3">
+              <label for="textarea">Deja aquí tu mensaje</label>
+              <textarea
+                class="form-control opacity-50"
+                name="textarea"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </div>
+            <input class="btn btn-outline-primary" type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-pinterest"></i
+          ></a>
+        </section>
+
+        <div class="ubicacion">
+          <h5 class="text-uppercase">Ubicación</h5>
+          <p>Nos encontramos en Calle Betis nº 32, Sevilla, España</p>
+        </div>
+
+        <section class="">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Nosotros</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                distinctio earum repellat quaerat voluptatibus placeat nam,
+                commodi optio pariatur est quia magnam eum harum.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Horarios</h5>
+              <ul class="list-unstyled mb-0">
+                <li>Lunes: Cerrado.</li>
+                <li>Martes-Viernes: 10AM-23h.</li>
+                <li>Sábado: 10AM-00h.</li>
+                <li>Domingo: 10AM-23h.</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Galería</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Carta</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Reservas</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Horarios</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row justify-content-between m-0">
+        <p class="col-sm text-md-start"> &#169 Todos los derechos reservados.</p>
+        <div class="col-sm text-md-end ">
+          <a href="">Política de privacidad legal</a>
+          <a href="">Cookies</a>
+          <a href="">Condiciones de Reserva/Política de cancelación</a>
+        </div> 
+      </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

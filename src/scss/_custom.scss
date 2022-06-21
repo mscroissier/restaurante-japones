@@ -1,0 +1,24 @@
+// Reescribir variables de bootstrap
+$rojo: #b03e40;
+$oscuro: #1e1e1e;
+$gris: #B5B5B5;
+$input-btn-padding-x: 2rem;
+
+// Asignar paleta de colores a BS
+$primary: $rojo;
+$dark: $oscuro;
+
+// Fuentes
+$headings-font-family:'Open Sans', sans-serif;
+
+// Tipografia 
+$display-font-weight: 900;
+$headings-font-weight: 700;
+
+// botones
+$btn-padding-x: $input-btn-padding-x;
+$btn-font-weight: 700;
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+

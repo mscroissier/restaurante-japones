@@ -1,0 +1,33 @@
+@use "../custom" as *; //para usar directamente las variables y mixins de Bootstrap sin el epsoacio de nombres
+
+.nosotros {
+  background-image: linear-gradient(to bottom, transparent 50%, $white 0%),
+    url(../../img/carta-2.jpg);
+  background-position: center, center;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  margin: 0;
+
+  &__grid {
+    display: grid;
+    grid-template-rows: repeat(2, 100rem);
+    @include media-breakpoint-up(md) {
+      grid-template-rows: repeat(2, 50rem);
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-rows: repeat(2, 23rem);
+    }
+  }
+  &__heading {
+    grid-row: 1/2;
+  }
+  &__contenido {
+    grid-row: 2/3;
+  }
+  &__imagen {
+
+    @include media-breakpoint-up(lg) {
+      width: 25%;
+    }
+  }
+}

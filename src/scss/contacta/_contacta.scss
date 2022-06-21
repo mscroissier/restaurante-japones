@@ -1,0 +1,42 @@
+@use '../custom' as *; //para usar directamente las variables y mixins de Bootstrap sin el epsoacio de nombres
+
+.contacta {
+  overflow: hidden;
+  background-image: url(../../img/fondo.png);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+
+&::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+}
+
+.btn-floating{
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  & .fab{
+    width: 2.2rem;
+    line-height: 2.3rem;
+  }
+}
+
+.bg-hover{
+  background-color: transparent;
+
+  &:target{
+  background-color: $white;
+}
+}

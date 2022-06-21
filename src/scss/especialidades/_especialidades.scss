@@ -1,0 +1,21 @@
+.especialidad {
+  height: 400px;
+
+  &__cover {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover > &__difuminado {
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    top: 0; /*posicionamos el div a la altura del contenedor*/
+    backdrop-filter: blur(5px); /*El efecto de vidrio*/
+
+  }
+  &__difuminado {
+    visibility: hidden;
+    font-size: 2rem;
+  }
+}
