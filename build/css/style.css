@@ -11145,19 +11145,6 @@ textarea.form-control-lg {
   transition: 0.6s;
 }
 
-.eventos .card {
-  filter: blur(4px);
-}
-.eventos .card:hover {
-  cursor: pointer;
-}
-.eventos .card img {
-  border-radius: 0.5rem;
-}
-.eventos .card .fecha {
-  color: #877457;
-}
-
 .especialidad {
   height: 400px;
 }
@@ -11189,12 +11176,15 @@ textarea.form-control-lg {
     grid-template-columns: repeat(3, 33%);
   }
 }
-.galeria__texto {
+.galeria__textos {
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.galeria__texto {
+  font-size: 1rem;
 }
 .galeria__enlace--1 {
   grid-row: 1/3;
@@ -11237,6 +11227,7 @@ textarea.form-control-lg {
 }
 .galeria__imagen--1 {
   height: 100%;
+  object-fit: cover;
 }
 .galeria__imagen--3 {
   object-fit: cover;
@@ -11333,7 +11324,7 @@ textarea.form-control-lg {
 
 .wrapper .card {
   background: #fff;
-  width: 430px;
+  width: 270px;
   display: flex;
   align-items: center;
   opacity: 0;
@@ -11344,6 +11335,11 @@ textarea.form-control-lg {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   animation: animate 15s linear infinite;
   animation-delay: calc(3s * var(--delay));
+}
+@media (min-width: 576px) {
+  .wrapper .card {
+    width: 430px;
+  }
 }
 
 .outer:hover .card {
@@ -11387,11 +11383,16 @@ textarea.form-control-lg {
   height: 90px;
   width: 90px;
   position: absolute;
-  left: -3px;
+  left: -20px;
   background: #fff;
   border-radius: 50%;
   padding: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 576px) {
+  .wrapper .card .img {
+    left: -3px;
+  }
 }
 
 .card .img img {
@@ -11456,11 +11457,11 @@ textarea.form-control-lg {
 }
 .nosotros__grid {
   display: grid;
-  grid-template-rows: repeat(2, 100rem);
+  grid-template-rows: repeat(2, 120rem);
 }
 @media (min-width: 768px) {
   .nosotros__grid {
-    grid-template-rows: repeat(2, 50rem);
+    grid-template-rows: repeat(2, 80rem);
   }
 }
 @media (min-width: 992px) {
@@ -11474,9 +11475,9 @@ textarea.form-control-lg {
 .nosotros__contenido {
   grid-row: 2/3;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nosotros__imagen {
-    width: 25%;
+    width: 50%;
   }
 }
 

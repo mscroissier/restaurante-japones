@@ -1,6 +1,5 @@
 @use "../custom" as *; //para usar directamente las variables y mixins de Bootstrap sin el epsoacio de nombres
 
-
 .carusel__reviews {
   height: 430px;
   display: flex;
@@ -10,24 +9,14 @@
   width: 556px;
   height: 216px;
   border: 5px solid transparent;
-  border-image: linear-gradient(
-      138deg,
-      $primary 10%,
-      $dark 70%
-    )
-    1;
+  border-image: linear-gradient(138deg, $primary 10%, $dark 70%) 1;
 }
 .cuadrado2 {
   align-self: flex-end;
   width: 556px;
   height: 216px;
   border: 5px solid transparent;
-  border-image: linear-gradient(
-      345deg,
-      $primary 10%,
-      $dark 70%
-    )
-    1;
+  border-image: linear-gradient(345deg, $primary 10%, $dark 70%) 1;
 }
 .wrapper {
   align-self: center;
@@ -39,7 +28,7 @@
 }
 .wrapper .card {
   background: $white;
-  width: 430px;
+  width: 270px;
   display: flex;
   align-items: center;
   opacity: 0;
@@ -50,6 +39,9 @@
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   animation: animate 15s linear infinite;
   animation-delay: calc(3s * var(--delay));
+  @include media-breakpoint-up(sm) {
+    width: 430px;
+  }
 }
 .outer:hover .card {
   animation-play-state: paused;
@@ -93,11 +85,14 @@
   height: 90px;
   width: 90px;
   position: absolute;
-  left: -3px;
+  left: -20px;
   background: $white;
   border-radius: 50%;
   padding: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  @include media-breakpoint-up(sm) {
+    left: -3px;
+  }
 }
 .card .img img {
   height: 100%;
