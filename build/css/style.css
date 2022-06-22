@@ -11414,7 +11414,7 @@ textarea.form-control-lg {
   background-image: linear-gradient(to top, transparent 50%, #fff 0%), url(../../img/carta.jpg);
   background-repeat: repeat, no-repeat;
   background-position: center;
-  background-size: contain, cover;
+  background-size: cover;
 }
 @media (min-width: 992px) {
   .carta {

@@ -5,7 +5,7 @@
     url(../../img/carta.jpg);
   background-repeat: repeat, no-repeat;
   background-position: center;
-  background-size: contain, cover;
+  background-size:  cover;
 
   @include media-breakpoint-up(lg) {
     background-image: linear-gradient(to right, transparent 60%, $white 0%),

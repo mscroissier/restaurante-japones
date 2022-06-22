@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compilar:sass": "sass --watch src/scss:build/css",
-    "build:sass": "purgecss -css build/css/style.css -con index.html -o build/css/japo.css "
+    "build:sass": "purgecss -css build/css/style.css -con index.html carta.html nosotros.html  -o build/css/japo.css  "
   },
   "repository": {
     "type": "git",

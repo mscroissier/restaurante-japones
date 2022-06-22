@@ -84,7 +84,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-h6, .h6, h5, .h5, h2, .h2 {
+h6, .h6, h5, .h5, h3, .h3, h2, .h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Open Sans", sans-serif;
@@ -98,6 +98,15 @@ h2, .h2 {
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
   }
 }
 
@@ -245,7 +254,8 @@ textarea {
   height: auto;
 }
 
-.container {
+.container,
+.container-fluid {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -580,7 +590,8 @@ textarea.form-control {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.navbar > .container {
+.navbar > .container,
+.navbar > .container-fluid {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -898,8 +909,16 @@ textarea.form-control {
   position: fixed !important;
 }
 
+.w-25 {
+  width: 25% !important;
+}
+
 .w-100 {
   width: 100% !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
 }
 
 .gap-3 {
@@ -966,6 +985,14 @@ textarea.form-control {
   padding: 0 !important;
 }
 
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
 .p-4 {
   padding: 1.5rem !important;
 }
@@ -1017,6 +1044,11 @@ textarea.form-control {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-white {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .rounded {
   border-radius: 0.25rem !important;
 }
@@ -1035,6 +1067,10 @@ textarea.form-control {
   }
 }
 @media (min-width: 992px) {
+
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
 
   .mb-lg-0 {
     margin-bottom: 0 !important;
@@ -1322,7 +1358,7 @@ textarea.form-control {
   background-image: linear-gradient(to top, transparent 50%, #fff 0%), url(../../img/carta.jpg);
   background-repeat: repeat, no-repeat;
   background-position: center;
-  background-size: contain, cover;
+  background-size: cover;
 }
 @media (min-width: 992px) {
   .carta {
@@ -1333,6 +1369,27 @@ textarea.form-control {
     background-attachment: fixed;
   }
 }
+.carta__grid {
+  display: grid;
+  grid-template-rows: repeat(2, 60rem);
+}
+@media (min-width: 768px) {
+  .carta__grid {
+    grid-template-rows: repeat(2, 30rem);
+  }
+}
+@media (min-width: 992px) {
+  .carta__grid {
+    grid-template-rows: repeat(1, 25rem);
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+.carta__contenido {
+  grid-column: 2/3;
+}
+.carta__precio {
+  color: #b03e40;
+}
 
 .nosotros {
   background-image: linear-gradient(to bottom, transparent 50%, #fff 0%), url(../../img/carta-2.jpg);
@@ -1340,6 +1397,26 @@ textarea.form-control {
   background-repeat: repeat, no-repeat;
   background-size: cover;
   margin: 0;
+}
+.nosotros__grid {
+  display: grid;
+  grid-template-rows: repeat(2, 100rem);
+}
+@media (min-width: 768px) {
+  .nosotros__grid {
+    grid-template-rows: repeat(2, 50rem);
+  }
+}
+@media (min-width: 992px) {
+  .nosotros__grid {
+    grid-template-rows: repeat(2, 23rem);
+  }
+}
+.nosotros__heading {
+  grid-row: 1/2;
+}
+.nosotros__contenido {
+  grid-row: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */
